@@ -1,0 +1,177 @@
+@import url("./index.css");
+
+.header-cursos {
+  background-color: var(--color-primario);
+  padding: 4rem 0 3.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-cursos::before {
+  content: 'CURSOS';
+  position: absolute;
+  right: -1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Syne', sans-serif;
+  font-size: 8rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.03);
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}
+
+.header-cursos .titulo {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.15;
+}
+
+.header-cursos .descripcion {
+  color: rgb(255, 255, 255, 0.55);
+  font-size: 0.975rem;
+  max-width: 500px;
+  line-height: 1.8;
+}
+
+.contenedor-busqueda {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    margin: 30px auto;
+}
+
+.barra-busqueda {
+    flex: 1;
+    padding: 14px 20px;
+    background-color: #0B243E;
+    border: 2px solid #00BFFF;
+    border-right: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    border-radius: 12px 0 0 12px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.barra-busqueda::placeholder {
+    color: rgba(255,255,255,0.6);
+}
+
+.barra-busqueda:focus {
+    border-color: var(--color-acento);
+    box-shadow: 0 0 12px rgba(0,191,255,0.4);
+}
+
+.btn-buscar {
+    padding: 14px 28px;
+    background: var(--color-acento);
+    color: #071A2D;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0 12px 12px 0;
+    transition: 0.3s;
+}
+
+.btn-buscar:hover {
+    background-color: #005bb5;
+}
+
+
+
+.titulo-cursos {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-primario);
+  margin-bottom: 0.4rem;
+  margin-left: 630px;
+  padding-top: 20px;
+}
+
+.linea-acento{
+  width: 44px;
+  height: 3px;
+  background-color: var(--color-acento);
+  margin-bottom: 5px;
+  display: flex;
+  margin-left: 630px;
+}
+
+.cards-cursos {
+  width: 400px;
+  height: 500px;
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+}
+
+.image-curso {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+
+.size-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.texto-curso {
+  font-size: 0.875rem;
+  color: #3a3a3a;
+  line-height: 1.65;
+  margin-top: 10px;
+}
+
+.duracion-curso {
+  font-size: 0.75rem;
+  color: #777777;
+  margin-top: 0.5rem;
+}
+
+.precio-curso {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #00BFFF;
+  margin-top: 0.5rem;
+}
+
+.curso {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 0.75rem;
+  background-color: var(--color-acento);
+  color: var(--color-primario);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.22rem 0.6rem;
+  border-radius: 3px;
+}
+
+
+
+
+#contenedor {
+  height: 400px;
+  background-color: var(--color-fondo);
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+
+
+
+
+
