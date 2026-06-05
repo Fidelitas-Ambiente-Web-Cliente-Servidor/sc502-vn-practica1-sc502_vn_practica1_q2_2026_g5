@@ -1,4 +1,217 @@
-
+/* Ultima version 3*/
 main {
   min-height: 60vh;
+}
+
+/* HERO PRINCIPAL */
+
+.page-header {
+  background-color: var(--color-primario);
+  padding: 6rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header::before {
+  content: 'ACADEMIA';
+  position: absolute;
+  right: -2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Syne', sans-serif;
+  font-size: 9rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.03);
+  white-space: nowrap;
+}
+
+.page-header .etiqueta-seccion {
+  display: inline-block;
+  color: var(--color-acento);
+  border: 1px solid var(--color-acento);
+  padding: .25rem .75rem;
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  margin-bottom: 1rem;
+}
+
+.page-header h1 {
+  color: white;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.page-header .descripcion {
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 650px;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.btn-academia {
+  background-color: var(--color-acento);
+  color: var(--color-primario);
+  font-weight: 700;
+  padding: .9rem 1.8rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btn-academia:hover {
+  opacity: .9;
+}
+
+/* HERO */
+
+.hero {
+  background-color: var(--color-primario);
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: 'CYBERDOG';
+  position: absolute;
+  right: -1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Syne', sans-serif;
+  font-size: 8rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.03);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+}
+
+.hero p {
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 650px;
+  margin: 1rem auto 2rem;
+  line-height: 1.8;
+}
+
+.hero .btn {
+  background-color: var(--color-acento);
+  border: none;
+  color: var(--color-primario);
+  font-weight: 700;
+  padding: 0.8rem 1.8rem;
+}
+
+.hero .btn:hover {
+  opacity: 0.9;
+}
+
+
+/* TITULOS */
+
+section h2 {
+  color: var(--color-primario);
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+
+/* CURSOS */
+
+.card {
+  border: 1px solid var(--color-borde);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 32px rgba(0, 180, 216, 0.12);
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-title {
+  color: var(--color-primario);
+  font-weight: 700;
+}
+
+.card-text {
+  color: #555;
+  line-height: 1.6;
+}
+
+.card .btn {
+  border-color: var(--color-acento);
+  color: var(--color-acento);
+  font-weight: 600;
+}
+
+.card .btn:hover {
+  background-color: var(--color-acento);
+  color: var(--color-primario);
+}
+
+
+/* ESTADISTICAS */
+
+.bg-light {
+  background-color: var(--color-superficie) !important;
+}
+
+.bg-light h3 {
+  color: var(--color-acento);
+  font-weight: 800;
+}
+
+.bg-light p {
+  color: var(--color-primario);
+  font-weight: 500;
+}
+
+
+/* TESTIMONIOS */
+
+.testimonio-card,
+.card.shadow-sm {
+  border: 1px solid var(--color-borde);
+}
+
+.card-body h6 {
+  color: var(--color-primario);
+  font-weight: 700;
+}
+
+.card-body small {
+  letter-spacing: 0.05em;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .hero {
+    padding: 3rem 0;
+  }
+
+  .hero::before {
+    display: none;
+  }
+
+  .card-img-top {
+    height: 200px;
+  }
+
 }
