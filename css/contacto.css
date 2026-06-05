@@ -1,0 +1,26 @@
+:root {
+  --color-fondo:        #f4f2f0;
+  --color-superficie:   #ffffff;
+  --color-primario:     #0d1b2a;
+  --color-acento:       #00b4d8;
+  --color-acento-suave: #e0f7fc;
+  --color-texto:        #1e1e1e;
+  --color-muted:        #6b7280;
+  --color-borde:        #d9d9d9; 
+}
+
+body {
+  background-color: var(--color-superficie);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  font-weight: 700;
+}
+
+iframe {
+  border: 1px solid var(--color-borde) !important;
+  background-color: #dde8ee;
+}
