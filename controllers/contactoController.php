@@ -22,7 +22,11 @@ class ContactoController
 
         if (
             empty($data['nombre']) || empty($data['correo']) ||empty($data['asunto']) || empty($data['mensaje']))
-            {$error = 'Todos los campos son obligatorios.';}
+            {$error = 'Todos los campos son obligatorios.';
+            require __DIR__ . '/../views/contacto/create.php';
+            return;
+
+            }
 
         $this->model->create($data);
 
@@ -34,9 +38,7 @@ class ContactoController
     private function sanitizeInput(array $input): array
     {
         return array_map(function ($value) {
-
             return htmlspecialchars(trim($value), ENT_QUOTES, 'UTF-8');
-
         }, $input);
     }
 }
