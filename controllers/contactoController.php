@@ -26,7 +26,7 @@ class ContactoController
 
         $this->model->create($data);
 
-        header('Location: contacto.html');
+        header('Location: contacto.php?controller=contacto&success=1');
         exit;
     }
 
