@@ -30,7 +30,7 @@ class ContactoController
 
         $this->model->create($data);
 
-        header('Location: contacto.php?controller=contacto&action=contacto');
+        header('Location: contacto.php?controller=contacto&action=store');
         exit;
     }
 
