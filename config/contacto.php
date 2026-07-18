@@ -5,6 +5,8 @@ require_once 'config/database.php';
 $controllerName = $_GET['controller'] ?? 'contacto';
 $action         = $_GET['action'] ?? 'index';
 $method         = $_SERVER['REQUEST_METHOD'];
+$id             = isset($_GET['id']) ? (int) $_GET['id'] : null;
+
 
 $controllerFile = __DIR__ . '/controllers/' . ucfirst($controllerName) . 'Controller.php';
 
