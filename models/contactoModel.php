@@ -9,7 +9,7 @@ class ContactoModel
 
     public function __construct()
     {
-        $this->db = Tarea1_db::getConnection();
+        $this->db = Database::getConnection();
     }
 
 
